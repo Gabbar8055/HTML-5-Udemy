@@ -1,0 +1,16 @@
+<html>
+<head></head>
+<body>
+	<script>
+		if (sessionStorage.hits){
+			sessionStorage.hits = Number(sessionStorage.hits) + 1;
+		}
+			else{
+				sessionStorage.hits = 1;			
+			}
+			document.write("Total hits: " + sessionStorage.hits );
+	</script>
+<p>refresh the page to increase the no of hits</p>
+<p>Close the tab to reset the no. </p>
+</body>
+</html>
